@@ -19,6 +19,45 @@
      <link rel="stylesheet" href="css/tooplate-gymso-style.css">
      <link rel="stylesheet" href="css/style.css">
 
+     <link rel="stylesheet"
+           href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+        /*html,*/
+        /*body {*/
+        /*    position: relative;*/
+        /*    height: 100%;*/
+        /*}*/
+
+        /*body {*/
+        /*    background: #eee;*/
+        /*    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+        /*    font-size: 14px;*/
+        /*    color: #000;*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*}*/
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            /*height: 300px;*/
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+    </style>
+
     <!--
     Tooplate 2119 Gymso Fitness
     https://www.tooplate.com/view/2119-gymso-fitness
@@ -30,7 +69,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-            <a class="navbar-brand" href="index.html"><img src="images/logo-brk.png" alt="logo-breakdance" class="w-75"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo-white.svg" alt="logo-breakdance" class="w-100"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,24 +78,28 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-lg-auto">
+
+
                     <li class="nav-item">
-                        <a href="#home" class="nav-link smoothScroll">Home</a>
+                        <a href="#about" class="nav-link smoothScroll">Kim jesteśmy</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                        <a href="#ksBreaking" class="nav-link smoothScroll">KS Breaking</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#class" class="nav-link smoothScroll">Classes</a>
+                        <a href="#class" class="nav-link smoothScroll">Projekty</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Partnerzy </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#schedule" class="nav-link smoothScroll">Schedules</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                        <a href="#contact" class="nav-link smoothScroll">Kontakt</a>
                     </li>
                 </ul>
 
@@ -74,7 +117,7 @@
      <!-- HERO -->
      <section class="hero d-flex flex-column justify-content-center align-items-center position-relative" id="home">
             <div class="video-container position-absolute w-100 " >
-                <video src="images/red_bull_bc_one_world_final_poland_2021_ _trailer (720p).mp4" muted autoplay loop ></video>
+                <video src="images/breaking-tour-poznań-(online-video-cutter.com).mp4" muted autoplay loop ></video>
             </div>
             <div class="bg-overlay"></div>
 
@@ -84,13 +127,13 @@
                          <div class="col-lg-8 col-md-10 mx-auto col-12">
                               <div class="hero-text mt-5 text-center">
 
-                                    <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>
 
-                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at Gymso Fitness</h1>
 
-                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>
+                                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="300">ZAPRASZAMY CIĘ DO<br>TAŃCA</h1>
+                                    <h6 data-aos="fade-up" data-aos-delay="500">BREAKING W POZNANIU</h6>
+<!--                                    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>-->
 
-                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>
+<!--                                    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>-->
                                    
                               </div>
                          </div>
@@ -100,7 +143,7 @@
      </section>
 
 
-     <section class="feature" id="feature">
+     <!--<section class="feature " id="feature">
         <div class="container">
             <div class="row">
 
@@ -136,7 +179,7 @@
 
             </div>
         </div>
-    </section>
+    </section>-->
 
 
      <!-- ABOUT -->
@@ -145,44 +188,30 @@
                     <div class="row">
 
                             <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are Gymso</h2>
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hej, miło się poznać</h2>
 
-                                <p data-aos="fade-up" data-aos-delay="400">You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
+                                <p data-aos="fade-up" data-aos-delay="400">Jesteśmy organizacją pozarządową i klubem sportowym działającymi na rzecz popularyzacji i rozwoju tańca sportowego Breaking - nowej dyscypliny olimpijskiej, która zadebiutuje na Igrzyskach w Paryżu w 2024 roku.</p>
 
-                                <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+                                <p data-aos="fade-up" data-aos-delay="500">Jesteśmy współzałożycielami Polskiej Federacji Tańca Ulicznego - jedynej organizacji w kraju oddelegowanej przez Polski Związek Sportu Tanecznego do przeprowadzenia Mistrzostw Polski, wyłonienia Kadry Narodowej oraz do przygotowania jej do zmagań na najważniejszych turniejach na świecie.</p>
+                                <br>
 
+                                <p data-aos="fade-up" data-aos-delay="500" >W naszym klubie sportowym - KS Breaking - trenują utalentowani zawodnicy i zawodniczki zdobywający wysokie miejsca w klasyfikacji generalnej MP, tacy jak Paulina Starus - Mistrzyni Polski 2022 w kategorii Bgirls powyżej 16 lat lub Hanna Grycza - I Wicemistrzyni Polski w kategorii Bgirls 6-11 lat.</p>
                             </div>
 
-                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+
+                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-5 col-md-10 offset-md-1 col-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="800">
                                 <div class="team-thumb">
-                                    <img src="images/team/team-image.jpg" class="img-fluid" alt="Trainer">
+                                    <img src="images/1684959585797.jpg" class="img-fluid" alt="Trainer">
 
                                     <div class="team-info d-flex flex-column">
 
-                                        <h3>Mary Yan</h3>
-                                        <span>Yoga Instructor</span>
+                                        <h3>Radek i Piotrek</h3>
+                                        <span>Założyciele Stowarzyszenia BREAKING</span>
 
-                                        <ul class="social-icon mt-3">
-                                            <li><a href="#" class="fa fa-twitter"></a></li>
-                                            <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
-                                <div class="team-thumb">
-                                    <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
-
-                                    <div class="team-info d-flex flex-column">
-
-                                        <h3>Catherina</h3>
-                                        <span>Body trainer</span>
-
-                                        <ul class="social-icon mt-3">
+<!--                                        <ul class="social-icon mt-3">
                                             <li><a href="#" class="fa fa-instagram"></a></li>
                                             <li><a href="#" class="fa fa-facebook"></a></li>
-                                        </ul>
+                                        </ul>-->
                                     </div>
                                 </div>
                             </div>
@@ -191,73 +220,307 @@
                </div>
      </section>
 
+    <!--Partnerzy-->
 
+<!--    <section class="partners">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col">-->
+<!--                    <h4>Nasza organizacja współpracuje z jednostkami samorządu terytorialnego, instytucjami sportu i kultury oraz przedsiębiorcami, którzy obdarzyli nas zaufaniem i z wielkim zaangażowaniem wspierają nasze działania na rzecz popularyzacji i rozwoju tańca sportowego Breaking w Polsce. </h4>-->
+<!--                    &lt;!&ndash; Slider main container &ndash;&gt;-->
+<!--                    <div class="partners_swiper swiper">-->
+<!--                        &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
+<!--                        <div class="swiper-wrapper">-->
+<!--                            &lt;!&ndash; Slides &ndash;&gt;-->
+<!--                            <div class="swiper-slide">Slide 1</div>-->
+<!--                            <div class="swiper-slide">Slide 2</div>-->
+<!--                            <div class="swiper-slide">Slide 3</div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; If we need pagination &ndash;&gt;-->
+<!--                        <div class="swiper-pagination"></div>-->
+
+<!--                        &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+<!--                        <div class="swiper-button-prev"></div>-->
+<!--                        <div class="swiper-button-next"></div>-->
+
+<!--                        &lt;!&ndash; If we need scrollbar &ndash;&gt;-->
+<!--                        <div class="swiper-scrollbar"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </section>-->
+
+
+
+    <section id="ksBreaking" class="position-relative" >
+        <div class="container py-5">
+            <img class="logo-bckg position-absolute" src="images/logo ks breaking-01.svg" alt="logo_KSB">
+
+            <div class="row">
+                <div class="col col-md-8 h-100">
+                    <h2>KS BREAKING</h2>
+                    <br>
+                    <p>KS BREAKING został utworzony w 2022 roku przez Radka i Piotrka - dwóch pasjonatów tańca Breaking, których marzeniem było ożywienie i rozwijanie lokalnej sceny tanecznej. Krótko po powstaniu KS BREAKING nasi zawodnicy wywalczyli wysokie miejsca w klasyfikacji ogólnej Poland Breaking Tour 2022 (PBT22) oraz w Mistrzostwach Polski 2022.
+                        <br><br>
+                        Osiągnięcia naszych zawodników:
+                        <br><br>
+                    <ul>
+                        <li>Paulina Starus - Mistrzostwo Polski 2022 w kat. Bgirls 16+
+                        </li>
+                        <li>Hanna Grycza - Wicemistrzostwo Polski 2022 w kat. Bgirls 6-11,
+                        </li>
+                        <li>
+                            Hanna Grycza II miejsce w klasyfikacji ogólnej PBT22, kat. Bgirls 6-11
+                        </li>
+                        <li>
+                            David Romero – 10. miejsce w klasyfikacji ogólnej PBT22, kat. Bboys 12-15 lat
+                        </li>
+                        <li>
+                            Kuba Maćkowiak – 12. miejsce w klasyfikacji ogólnej PBT22, kat. Bboys 12-15 lat
+                        </li>
+                        <li>
+                            Mia Paetz – 6. miejsce w klasyfikacji ogólnej PBT22, kat. Bgirls 6-11 lat
+                        </li>
+                    <li>Zuzanna Lewicka – 7. miejsce w klasyfikacji ogólnej PBT22, kat. Bgirls 6-11 lat</li>
+                    <li>Jagna Kulewicz – 8. miejsce w klasyfikacji ogólnej PBT22, kat. Bgirls 6-11 lat</li>
+                    <li>Maria Rudnicka – 9. miejsce w klasyfikacji ogólnej PBT22, kat. Bgirls 6-11 lat</li>
+                    </ul>
+
+                    </p>
+                    <br>
+                    <br>
+                    <p>* PBT22 - Poland Breaking Tour 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
      <!-- CLASS -->
+
      <section class="class section" id="class">
                <div class="container">
                     <div class="row">
+                        <div class="col-lg-12 col-12 text-center mb-5">
+                            <h6 data-aos="fade-up">Historyczny moment w polskim Breaking'u</h6>
 
-                            <div class="col-lg-12 col-12 text-center mb-5">
-                                <h6 data-aos="fade-up">Get A Perfect Body</h6>
+                            <h2 data-aos="fade-up" data-aos-delay="200">Nasze projekty</h2>
+                        </div>
 
-                                <h2 data-aos="fade-up" data-aos-delay="200">Our Training Classes</h2>
-                             </div>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <a href="#class">
+                                        <div class="col p-0" data-aos="fade-up" data-aos-delay="400">
+                                            <div class="class-thumb">
+                                                <img src="images/bsb7.jpg" class="img-fluid" alt="Class">
 
-                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
-                                <div class="class-thumb">
-                                    <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Class">
+                                                <div class="class-info">
+                                                    <h3 class="mb-1">BSB vol. 7</h3>
+                                                    <h3 class="mb-1 opacity-0 text-white">BSB vol. 7</h3>
 
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Yoga</h3>
+                                                    <p class="mt-3">Historyczny moment w polskim Breaking'u</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-toggle="modal" data-target="#exampleModalCenter-1">
+                                    <a href="#class">
+                                        <div class="col p-0" data-aos="fade-up" data-aos-delay="400">
+                                            <div class="class-thumb">
+                                                <img src="images/_PKS4777.jpg" class="img-fluid" alt="Class">
 
-                                        <span><strong>Trained by</strong> - Bella</span>
+                                                <div class="class-info">
+                                                    <h3 class="mb-1">Malta Breaking Championship</h3>
+                                                    <p class="mt-3">Breaking nad jeziorem Maltańskim</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" data-toggle="modal" data-target="#exampleModalCenter-2">
+                                <a href="#class">
+                                    <div class="col p-0" data-aos="fade-up" data-aos-delay="400">
+                                        <div class="class-thumb">
+                                            <img src="images/J25A2091.jpg" class="img-fluid" alt="Class">
 
-                                        <span class="class-price">$50</span>
+                                            <div class="class-info">
+                                                <h3 class="mb-1">BSB vol. 8 </h3>
+                                                <h3 class="mb-1 opacity-0 text-white">BSB vol. 7</h3>
+                                                <p class="mt-3">Kolejny krok w historii polskiego Breaking'u</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
 
-                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">BSB vol.7</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       Breaking School Battle vol. 7 (7-8.05.2022) -jako Stowarzyszenie BREAKING mieliśmy zaszczyt zorganizować PIERWSZY W HISTORII turniej rozpoczynający walkę o oficjalne Mistrzostwo Polski w tańcu Sportowym Breaking.  BSB vol. 7 było imprezą inaugurującą Poland Breaking Tour 2022 - cykl 4 turniejów kwalifikacyjnych Mistrzostw Polski 2022. Na naszym turnieju zmagało się ze sobą ok. 260 zawodników i zawodniczek z całej Polski.
+                                    </div>
+                                    <!-- Swiper -->
+                                    <div class="swiper modalSwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/PBT2022-SuchyLas-D1-183.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/BSB7(1).jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/PBT2022-SuchyLas-D1-418.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/bsb7.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/bsb7-1.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/bsb7-2.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle-1">Malta Breaking Championship</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Malta Breaking Championship (8.07.2022) - organizowany przez nas - z założenia mały, lokalny turniej - przyniósł na poznańską Maltę niesamowite widowisko oraz piękną sportową rywalizację. Ku naszemu zdziwieniu, na turnieju zjawili się zawodnicy z takich miast jak Poznań, Szczecin. Gdańsk, Gorzów Wielkopolski, Częstochowa oraz jeden zawodnik z Gruzji.
+                                    </div>
+                                    <!-- Swiper -->
+                                    <div class="swiper modalSwiper">
+                                        <div class="swiper-wrapper">
 
-                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
-                                <div class="class-thumb">
-                                    <img src="images/class/crossfit-class.jpg" class="img-fluid" alt="Class">
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS5160-1.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS5039-1.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS4793.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS4777.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS4627-1.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS4605-1.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS4546.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/_PKS4493.jpg">
+                                            </div>
 
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Areobic</h3>
 
-                                        <span><strong>Trained by</strong> - Mary</span>
 
-                                        <span class="class-price">$66</span>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
 
-                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle-2">Breaking School Battle vol. 8</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Breaking School Battle vol. 8 (25.03.2023) - Podobnie jak w 2022 roku, BSB vol. 8 po raz kolejny rozpoczynało cykl turniejów Poland Breaking Tour 2023, prowadzących do Mistrzostw Polski. W tym roku, poza zawodnikami i zawodniczkami z całej Polski gościliśmy również tancerzy z Ukrainy, Kazachstanu, Brazylii i Czech. Nad oceną zawodników czuwało wykwalifikowane grono sędziowskie z Polski i Wielkiej Brytanii. Turniej BSB vol.8 wzbudził zainteresowanie organizatorów Europejskich Igrzysk Kraków Małopolska 2023, których mieliśmy zaszczyt gościć na naszym turnieju i wspólnie wymienić się cennym doświadczeniem.
+                                    </div>
+                                    <!-- Swiper -->
+                                    <div class="swiper modalSwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/J25A3331.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/wwww7.jpeg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/bsb8.jpeg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/J25A0798.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/J25A1794.jpg">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/J25A2091.jpg">
+                                            </div>
 
-                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="class-thumb">
-                                    <img src="images/class/cardio-class.jpg" class="img-fluid" alt="Class">
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
 
-                                    <div class="class-info">
-                                        <h3 class="mb-1">Cardio</h3>
 
-                                        <span><strong>Trained by</strong> - Cathe</span>
-
-                                        <span class="class-price">$75</span>
-
-                                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
                     </div>
                </div>
+         <!-- Button trigger modal -->
+
+
+
      </section>
 
 
      <!-- SCHEDULE -->
-     <section class="schedule section" id="schedule">
+     <<!--section class="schedule section" id="schedule">
                <div class="container">
                     <div class="row">
 
@@ -363,7 +626,7 @@
 
                     </div>
                </div>
-     </section>
+     </section>-->
 
 
      <!-- CONTACT -->
@@ -372,23 +635,37 @@
                <div class="row">
 
                     <div class="ml-auto col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Skontaktuj się z nami</h2>
 
-                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
-                            <input type="text" class="form-control" name="cf-name" placeholder="Name">
+                        <!-- Ваш HTML-код формы -->
+                        <form id="contact-form" action="php/kontakt.php" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <div>
+                                <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Imię">
+                                <span class="error-message" id="error-name"></span>
+                            </div>
 
-                            <input type="email" class="form-control" name="cf-email" placeholder="Email">
+                            <div>
+                                <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Email">
+                                <span class="error-message" id="error-email"></span>
+                            </div>
 
-                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+                            <div>
+                                <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Wiadomość"></textarea>
+                                <span class="error-message" id="error-message"></span>
+                            </div>
 
-                            <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
+                            <button type="submit" class="form-control send-contact-form" id="submit-button" name="submit">Wyślij</button>
                         </form>
+
+
+
+
                     </div>
 
                     <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Gdzie nas <span>znależć</span></h2>
 
-                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p>
+                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i>60-171, ul. Żmigrodzka 41/49, Poznań</p>
 <!-- How to change your own map point
 	1. Go to Google Maps
 	2. Click on your location point
@@ -396,7 +673,9 @@
 	4. Copy only URL and paste it within the src="" field below
 -->
                         <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-                           <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<!--                           <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+                            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQ80w5wxFBEcR0aI05jD5y2A&key=AIzaSyALJKwHsWNfjX3yk1PbhBUfgCuBUrL8LCk"></iframe>
                         </div>
                     </div>
                     
@@ -430,7 +709,7 @@
      </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+    <!--<div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
 
         <div class="modal-content">
@@ -467,7 +746,7 @@
 
         </div>
       </div>
-    </div>
+    </div>-->
 
      <!-- SCRIPTS -->
      <script src="js/jquery.min.js"></script>
@@ -475,6 +754,91 @@
      <script src="js/aos.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var modalswiper = new Swiper(".modalSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Ваш JavaScript-код для валидации -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let name = document.getElementById("cf-name").value.trim();
+            let email = document.getElementById("cf-email").value.trim();
+            let message = document.getElementById("cf-message").value.trim();
+
+            // Очищаем предыдущие сообщения об ошибках
+            let errorElements = document.getElementsByClassName("error-message");
+            for (let i = 0; i < errorElements.length; i++) {
+                errorElements[i].textContent = "";
+            }
+
+            name.addEventListener("focusout", (event)=>{
+                if (event.target() === "") {
+                    document.getElementById("error-name").textContent = "Пожалуйста, введите ваше имя.";
+                }
+            });
+            // Производим валидацию полей и выводим сообщения об ошибках
+
+
+            if (email === "") {
+                document.getElementById("error-email").textContent = "Пожалуйста, введите ваш email.";
+                return;
+            }
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("error-email").textContent = "Пожалуйста, введите корректный email.";
+                return;
+            }
+
+            if (message === "") {
+                document.getElementById("error-message").textContent = "Пожалуйста, введите ваше сообщение.";
+                return;
+            }
+
+            // Если все данные прошли валидацию, отправляем форму
+            // document.querySelector(".send-contact-form").submit();
+        });
+    </script>
 
 </body>
 </html>
